@@ -1,0 +1,332 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS00 U1
+U 1 1 5ED5BE16
+P 4550 3000
+F 0 "U1" H 4550 3325 50  0000 C CNN
+F 1 "74LS00" H 4550 3234 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_LongPads" H 4550 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4550 3000 50  0001 C CNN
+	1    4550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U1
+U 2 1 5ED5BE5E
+P 4550 3700
+F 0 "U1" H 4550 4025 50  0000 C CNN
+F 1 "74LS00" H 4550 3934 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_LongPads" H 4550 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4550 3700 50  0001 C CNN
+	2    4550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U1
+U 3 1 5ED5BE82
+P 5600 3000
+F 0 "U1" H 5600 3325 50  0000 C CNN
+F 1 "74LS00" H 5600 3234 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_LongPads" H 5600 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5600 3000 50  0001 C CNN
+	3    5600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U1
+U 4 1 5ED5BEAB
+P 5600 3700
+F 0 "U1" H 5600 4025 50  0000 C CNN
+F 1 "74LS00" H 5600 3934 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_LongPads" H 5600 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5600 3700 50  0001 C CNN
+	4    5600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2900 5300 3000
+Wire Wire Line
+	5300 3600 5300 3700
+Wire Wire Line
+	4250 3600 4250 3300
+Wire Wire Line
+	4250 3300 4850 3300
+Wire Wire Line
+	4850 3300 4850 3000
+Wire Wire Line
+	4850 3000 5300 3000
+Connection ~ 4850 3000
+Connection ~ 5300 3000
+Wire Wire Line
+	5300 3000 5300 3100
+Wire Wire Line
+	3800 2900 4100 2900
+Wire Wire Line
+	3800 3100 4250 3100
+Wire Wire Line
+	4250 3800 4100 3800
+Wire Wire Line
+	4100 3800 4100 2900
+Connection ~ 4100 2900
+Wire Wire Line
+	4100 2900 4250 2900
+Wire Wire Line
+	4850 3700 5300 3700
+Connection ~ 5300 3700
+Wire Wire Line
+	5300 3700 5300 3800
+Text Label 6000 3000 0    50   ~ 0
+Out1
+Text Label 6000 3700 0    50   ~ 0
+Out2
+Text Label 3800 2900 2    50   ~ 0
+In
+Text Label 3800 3100 2    50   ~ 0
+Sel
+Wire Wire Line
+	5900 3700 6000 3700
+Wire Wire Line
+	5900 3000 6000 3000
+$Comp
+L 74xx:74LS00 U1
+U 5 1 5ED5C3A9
+P 4500 4700
+F 0 "U1" H 4730 4746 50  0000 L CNN
+F 1 "74LS00" H 4730 4655 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_LongPads" H 4500 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4500 4700 50  0001 C CNN
+	5    4500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5ED5C432
+P 4500 4200
+F 0 "#PWR0101" H 4500 4050 50  0001 C CNN
+F 1 "VCC" H 4517 4373 50  0000 C CNN
+F 2 "" H 4500 4200 50  0001 C CNN
+F 3 "" H 4500 4200 50  0001 C CNN
+	1    4500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5ED5C4A9
+P 4500 5200
+F 0 "#PWR0102" H 4500 4950 50  0001 C CNN
+F 1 "GND" H 4505 5027 50  0000 C CNN
+F 2 "" H 4500 5200 50  0001 C CNN
+F 3 "" H 4500 5200 50  0001 C CNN
+	1    4500 5200
+	1    0    0    -1  
+$EndComp
+Text Label 5200 4200 1    50   ~ 0
+In
+Text Label 5600 4200 1    50   ~ 0
+Sel
+Text Label 6000 4200 1    50   ~ 0
+Out1
+Text Label 6400 4200 1    50   ~ 0
+Out2
+$Comp
+L Device:R R1
+U 1 1 5ED5C562
+P 5200 4350
+F 0 "R1" H 5270 4396 50  0000 L CNN
+F 1 "R" H 5270 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 4350 50  0001 C CNN
+F 3 "~" H 5200 4350 50  0001 C CNN
+	1    5200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ED5C591
+P 5600 4350
+F 0 "R2" H 5670 4396 50  0000 L CNN
+F 1 "R" H 5670 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5530 4350 50  0001 C CNN
+F 3 "~" H 5600 4350 50  0001 C CNN
+	1    5600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5ED5C5B1
+P 6000 4350
+F 0 "R3" H 6070 4396 50  0000 L CNN
+F 1 "R" H 6070 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5930 4350 50  0001 C CNN
+F 3 "~" H 6000 4350 50  0001 C CNN
+	1    6000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5ED5C668
+P 6400 4350
+F 0 "R4" H 6470 4396 50  0000 L CNN
+F 1 "R" H 6470 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6330 4350 50  0001 C CNN
+F 3 "~" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5ED5C756
+P 5200 4650
+F 0 "D1" V 5238 4533 50  0000 R CNN
+F 1 "LED" V 5147 4533 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 5200 4650 50  0001 C CNN
+F 3 "~" H 5200 4650 50  0001 C CNN
+	1    5200 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5ED5CADD
+P 5600 4650
+F 0 "D2" V 5638 4533 50  0000 R CNN
+F 1 "LED" V 5547 4533 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 5600 4650 50  0001 C CNN
+F 3 "~" H 5600 4650 50  0001 C CNN
+	1    5600 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5ED5CB0B
+P 6000 4650
+F 0 "D3" V 6038 4533 50  0000 R CNN
+F 1 "LED" V 5947 4533 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 6000 4650 50  0001 C CNN
+F 3 "~" H 6000 4650 50  0001 C CNN
+	1    6000 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5ED5CB37
+P 6400 4650
+F 0 "D4" V 6438 4533 50  0000 R CNN
+F 1 "LED" V 6347 4533 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 6400 4650 50  0001 C CNN
+F 3 "~" H 6400 4650 50  0001 C CNN
+	1    6400 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5ED5CB65
+P 5200 4800
+F 0 "#PWR0103" H 5200 4550 50  0001 C CNN
+F 1 "GND" H 5205 4627 50  0000 C CNN
+F 2 "" H 5200 4800 50  0001 C CNN
+F 3 "" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5ED5CB8A
+P 5600 4800
+F 0 "#PWR0104" H 5600 4550 50  0001 C CNN
+F 1 "GND" H 5605 4627 50  0000 C CNN
+F 2 "" H 5600 4800 50  0001 C CNN
+F 3 "" H 5600 4800 50  0001 C CNN
+	1    5600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5ED5CBAF
+P 6000 4800
+F 0 "#PWR0105" H 6000 4550 50  0001 C CNN
+F 1 "GND" H 6005 4627 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5ED5CBD4
+P 6400 4800
+F 0 "#PWR0106" H 6400 4550 50  0001 C CNN
+F 1 "GND" H 6405 4627 50  0000 C CNN
+F 2 "" H 6400 4800 50  0001 C CNN
+F 3 "" H 6400 4800 50  0001 C CNN
+	1    6400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 5ED5D42E
+P 3350 4450
+F 0 "J1" H 3400 4767 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 3400 4676 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x04_Pitch2.54mm" H 3350 4450 50  0001 C CNN
+F 3 "~" H 3350 4450 50  0001 C CNN
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5ED5D727
+P 2800 4700
+F 0 "#PWR0107" H 2800 4450 50  0001 C CNN
+F 1 "GND" H 2805 4527 50  0000 C CNN
+F 2 "" H 2800 4700 50  0001 C CNN
+F 3 "" H 2800 4700 50  0001 C CNN
+	1    2800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 5ED5D74E
+P 2800 4300
+F 0 "#PWR0108" H 2800 4150 50  0001 C CNN
+F 1 "VCC" H 2817 4473 50  0000 C CNN
+F 2 "" H 2800 4300 50  0001 C CNN
+F 3 "" H 2800 4300 50  0001 C CNN
+	1    2800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4300 2800 4350
+Wire Wire Line
+	2800 4700 2800 4650
+Text Label 3150 4450 2    50   ~ 0
+In
+Text Label 3150 4550 2    50   ~ 0
+Sel
+Text Label 3650 4450 0    50   ~ 0
+Out1
+Text Label 3650 4550 0    50   ~ 0
+Out2
+Wire Wire Line
+	2800 4650 3150 4650
+Wire Wire Line
+	2800 4350 3150 4350
+Wire Wire Line
+	3650 4650 3150 4650
+Connection ~ 3150 4650
+Connection ~ 3150 4350
+Wire Wire Line
+	3150 4350 3650 4350
+$EndSCHEMATC
